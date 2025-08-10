@@ -73,7 +73,7 @@ Message: ${formData.message}`;
       );
   };
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 pt-30 font-sans">
+    <div className="max-w-4xl mx-auto px-4 py-8 md:pt-30 max-md:pt-20 font-sans">
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <h1 className="text-2xl font-bold text-[#7D6855]">Contact Us</h1>
