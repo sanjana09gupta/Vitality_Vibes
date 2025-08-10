@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { ASSETS } from "../assets";
 const Gallery = () => {
   // const [uploadedImages, setUploadedImages] = useState([]);

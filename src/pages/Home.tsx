@@ -42,7 +42,7 @@ const reviews = [
   },
 ];
 
-function ServiceCard({ image, title, description, i }: any) {
+function ServiceCard({ image, title, description }: any) {
   return (
     <Link to="/services" className="block h-full">
       <motion.div

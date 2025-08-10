@@ -1,5 +1,5 @@
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import React, { useState } from "react";
+import { useState } from "react";
 import emailjs from "emailjs-com";
 const containerStyle = {
   width: "100%",
@@ -62,7 +62,7 @@ Message: ${formData.message}`;
         "YOUR_USER_ID"
       )
       .then(
-        (result) => {
+        () => {
           alert("Message sent successfully!");
           setFormData({ name: "", email: "", message: "" });
         },
