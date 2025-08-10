@@ -8,14 +8,14 @@ const About = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
+    <div className="max-w-5xl mx-auto px-4 py-8 pt-30">
       <div className="relative rounded-lg overflow-hidden mb-8">
         <img
           src={ASSETS.BOOKIMAGE}
           alt="About Vitality Vibes"
           className="w-full h-48 object-cover"
         />
-        <h1 className="absolute bottom-4 left-4 text-white text-2xl font-bold drop-shadow-lg">
+        <h1 className="absolute bottom-4 left-8 text-white text-2xl font-bold drop-shadow-lg">
           About Vitality Vibes
         </h1>
       </div>
