@@ -58,8 +58,8 @@ function ServiceCard({ image, title, description }: any) {
           variants={imageVariants}
         />
         <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-semibold mb-2">{title}</h3>
-          <p className="text-gray-600 flex-grow">{description}</p>
+          <h3 className="text-xl font-semibold mb-2 text-[#7D6855]">{title}</h3>
+          <p className="text-[#7D6855] flex-grow">{description}</p>
         </div>
       </motion.div>
     </Link>
@@ -119,7 +119,7 @@ const Home = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-20">
-        <h2 className="text-3xl font-bold mb-10">Featured Services</h2>
+        <h2 className="text-3xl font-bold mb-10 text-[#7D6855]">Featured Services</h2>
 
      
         <div className="grid md:grid-cols-3 gap-8 items-stretch">

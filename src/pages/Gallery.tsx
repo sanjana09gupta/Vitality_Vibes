@@ -49,16 +49,16 @@ const Gallery = () => {
   // };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold">Gallery</h1>
-      <p className="text-gray-500 mb-6">
+    <div className="max-w-6xl mx-auto px-4 py-8 pt-30">
+      <h1 className="text-2xl font-bold text-[#7D6855]">Gallery</h1>
+      <p className="text-gray-500 mb-6 ">
         Explore the serene ambiance and luxurious treatments at Serene Spa
         through our visual gallery.
       </p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {services.map((service, index) => (
-          <div key={index} className="text-center">
+          <div key={index} className="text-center text-[#7D6855]">
             <img
               src={service.img}
               alt={service.title}
@@ -117,7 +117,7 @@ const Gallery = () => {
       </div> */}
 
       {/* Video */}
-      <h2 className="text-xl font-bold mt-10 mb-4">Customer Experiences</h2>
+      <h2 className="text-xl font-bold mt-10 mb-4 text-[#7D6855]">Customer Experiences</h2>
       <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
         <iframe
           src="https://www.youtube.com/embed/cIOTHiydsJM"

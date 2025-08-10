@@ -73,15 +73,10 @@ Message: ${formData.message}`;
       );
   };
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 font-sans">
-      <h1 className="text-2xl font-bold">Contact Us</h1>
-      <p className="text-gray-500 mt-1">
-        We’re here to help. Reach out to us with any questions or to book your
-        next spa experience.
-      </p>
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-30 font-sans">
 
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold">Contact Us</h1>
+        <h1 className="text-2xl font-bold text-[#7D6855]">Contact Us</h1>
         <p className="text-gray-500 mt-1">
           We’re here to help. Reach out to us with any questions or to book your
           next spa experience.
@@ -105,7 +100,7 @@ Message: ${formData.message}`;
         </div>
       </div>
 
-      <section className="mt-6 border-t pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <section className="mt-6 border-t pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-[#7D6855]">
         <div>
           <h4 className="font-semibold">Phone</h4>
           <p>+91 8320908203</p>
@@ -117,10 +112,10 @@ Message: ${formData.message}`;
       </section>
 
       <section className="mt-6">
-        <h3 className="text-lg font-semibold">Send Us a Message</h3>
+        <h3 className="text-lg font-semibold text-[#7D6855]">Send Us a Message</h3>
         <form className="flex flex-col gap-4 mt-4" onSubmit={handleSubmit}>
           <div>
-            <label className="block mb-1">Your Name</label>
+            <label className="block mb-1 text-[#7D6855]">Your Name</label>
             <input
               type="text"
               name="name"
@@ -132,7 +127,7 @@ Message: ${formData.message}`;
             />
           </div>
           <div>
-            <label className="block mb-1">Your Email</label>
+            <label className="block mb-1 text-[#7D6855]">Your Email</label>
             <input
               type="email"
               name="email"
@@ -144,7 +139,7 @@ Message: ${formData.message}`;
             />
           </div>
           <div>
-            <label className="block mb-1">Your Message</label>
+            <label className="block mb-1 text-[#7D6855]">Your Message</label>
             <textarea
               name="message"
               placeholder="Type your message"

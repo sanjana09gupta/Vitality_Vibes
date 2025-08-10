@@ -21,8 +21,8 @@ const About = () => {
       </div>
 
       <section className="mb-6">
-        <h2 className="text-xl font-semibold mb-2">Our Vision</h2>
-        <p>
+        <h2 className="text-xl font-semibold mb-2 text-[#7D6855]">Our Vision</h2>
+        <p className="text-[#7D6855]">
           At Vitality Vibes, our vision is to be the leading wellness
           destination, offering transformative experiences that enhance the
           well-being of our clients. We strive to create a sanctuary where
@@ -32,8 +32,8 @@ const About = () => {
       </section>
 
       <section className="mb-6">
-        <h2 className="text-xl font-semibold mb-2">Our Mission</h2>
-        <p>
+        <h2 className="text-xl font-semibold mb-2 text-[#7D6855]">Our Mission</h2>
+        <p className="text-[#7D6855]">
           Our mission is to provide exceptional spa services that promote
           physical, mental, and emotional balance. We are committed to using
           high-quality products, employing skilled therapists, and delivering
@@ -44,7 +44,7 @@ const About = () => {
       </section>
 
       <section className="mb-6">
-        <h2 className="text-xl font-semibold mb-2">Our Story</h2>
+        <h2 className="text-xl font-semibold mb-2 text-[#7D6855]">Our Story</h2>
         <p>
           Vitality Vibes was founded in 2015 by Sarah Chen, a passionate
           advocate for holistic wellness. Inspired by her own journey of
@@ -60,7 +60,7 @@ const About = () => {
       </section>
 
       <section className="mb-6">
-        <h2 className="text-xl font-semibold mb-6">Meet Our Team</h2>
+        <h2 className="text-xl font-semibold mb-6 text-[#7D6855]">Meet Our Team</h2>
         <div className="flex flex-col sm:flex-row justify-center gap-10">
           <div className="text-center">
             <img
@@ -68,7 +68,7 @@ const About = () => {
               alt="Emily Carter"
               className="mx-auto rounded-full w-32 h-32 object-cover mb-2"
             />
-            <p className="font-semibold">Emily Carter</p>
+            <p className="font-semibold text-[#7D6855]">Emily Carter</p>
             <p className="text-sm text-gray-500">Lead Therapist</p>
           </div>
 
@@ -78,7 +78,7 @@ const About = () => {
               alt="David Lee"
               className="mx-auto rounded-full w-32 h-32 object-cover mb-2"
             />
-            <p className="font-semibold">David Lee</p>
+            <p className="font-semibold text-[#7D6855]">David Lee</p>
             <p className="text-sm text-gray-500">Massage Specialist</p>
           </div>
 
@@ -88,7 +88,7 @@ const About = () => {
               alt="Olivia Brown"
               className="mx-auto rounded-full w-32 h-32 object-cover mb-2"
             />
-            <p className="font-semibold">Olivia Brown</p>
+            <p className="font-semibold text-[#7D6855]">Olivia Brown</p>
             <p className="text-sm text-gray-500">Aesthetician</p>
           </div>
         </div>

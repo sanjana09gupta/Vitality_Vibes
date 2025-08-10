@@ -106,20 +106,20 @@ const Booking = () => {
         />
       </div>
 
-      <h1 className="text-3xl font-bold mb-6">Book an Appointment</h1>
+      <h1 className="text-3xl font-bold mb-6 text-[#7D6855]">Book an Appointment</h1>
 
       {/* Select Service */}
       <div className="mb-6">
-        <h2 className="text-lg font-semibold mb-3">Select a Service</h2>
-        <div className="flex flex-wrap gap-3">
+        <h2 className="text-lg font-semibold mb-3 text-[#7D6855]">Select a Service</h2>
+        <div className="flex flex-wrap gap-3 text-[#7D6855]">
           {services.map((cat, idx) => (
             <button
               key={idx}
               onClick={() => handleCategoryClick(cat.category)}
-              className={`px-4 py-2 rounded-full border ${
+              className={`px-4 py-2 rounded-full border border-[#7D6855] text-[#7D6855] ${
                 selectedCategory === cat.category
-                  ? "bg-black text-white"
-                  : "bg-white text-black"
+                  ? "bg-[#7D6855] text-white"
+                  : "bg-white text-[#7D6855]"
               }`}
             >
               {cat.category}
@@ -130,20 +130,20 @@ const Booking = () => {
 
       {/* Choose Date & Time */}
       <div className="mb-6">
-        <h2 className="text-lg font-semibold mb-3">Choose Date and Time</h2>
+        <h2 className="text-lg font-semibold mb-3 text-[#7D6855]">Choose Date and Time</h2>
         <div className="flex flex-col sm:flex-row gap-6">
           <Calendar value={date} onChange={(value) => setDate(value as Date)} />
 
           <div className="flex-1">
-            <label className="block mb-1 text-sm font-medium">
+            <label className="block mb-1 text-sm font-medium text-[#7D6855] focus:outline-none">
               Select Time
             </label>
             <select
               value={time}
               onChange={(e) => setTime(e.target.value)}
-              className="border p-3 w-full rounded"
+              className="border border-[#7D6855] p-3 w-full rounded"
             >
-              <option value="">Select</option>
+              <option value="" className="text-[#7D6855]">Select</option>
               {generateTimeSlots().map((slot, idx) => (
                 <option
                   key={idx}
@@ -161,14 +161,14 @@ const Booking = () => {
 
       {/* Your Info */}
       <div className="mb-6">
-        <h2 className="text-lg font-semibold mb-3">Your Information</h2>
+        <h2 className="text-lg font-semibold mb-3 text-[#7D6855]">Your Information</h2>
         <input
           type="text"
           name="name"
           placeholder="Full Name"
           value={formData.name}
           onChange={handleInputChange}
-          className="border p-3 w-full rounded mb-3"
+          className="border border-[#7D6855] p-3 w-full rounded mb-3"
         />
         <input
           type="email"
@@ -176,7 +176,7 @@ const Booking = () => {
           placeholder="Email"
           value={formData.email}
           onChange={handleInputChange}
-          className="border p-3 w-full rounded mb-3"
+          className="border border-[#7D6855] p-3 w-full rounded mb-3"
         />
         <input
           type="tel"
@@ -184,22 +184,22 @@ const Booking = () => {
           placeholder="Phone Number"
           value={formData.phone}
           onChange={handleInputChange}
-          className="border p-3 w-full rounded"
+          className="border border-[#7D6855] p-3 w-full rounded"
         />
       </div>
 
       {/* Booking Summary */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-t pt-4">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-t border-[#7D6855] pt-4">
         <div className="text-sm">
-          <h3 className="font-semibold mb-2">Booking Summary</h3>
-          <p>
+          <h3 className="font-semibold mb-2 text-[#7D6855]">Booking Summary</h3>
+          <p className="text-[#7D6855]">
             <strong>Service:</strong>{" "}
             {selectedService || selectedCategory || "Not Selected"}
           </p>
-          <p>
+          <p className="text-[#7D6855]">
             <strong>Date:</strong> {date.toDateString()}
           </p>
-          <p>
+          <p className="text-[#7D6855]">
             <strong>Time:</strong> {time || "Not selected"}
           </p>
         </div>
